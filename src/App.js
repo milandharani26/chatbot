@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ChatNav from "./components/ChatNav";
+import MainLeft from "./components/MainLeft";
+import Main from "./components/Main";
+import ChatMain from "./components/ChatMain";
+import MainRight from "./components/MainRight";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />}>
+            <Route path="mainLeft" element={<MainLeft />}></Route>
+            <Route path="mainRight" element={<MainRight />}>
+              <Route path="chatNav" element={<ChatNav />}></Route>
+              <Route path="chatMain" element={<ChatMain />}></Route>
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
-export default App;
