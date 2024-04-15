@@ -1,6 +1,6 @@
-import ChatBottom from "./ChatBottom";
-import ChatMain from "./ChatMain";
-import ChatNav from "./ChatNav";
+import ChatBottom from "../Chat/ChatBottom";
+import ChatMain from "../Chat/ChatMain";
+import ChatNav from "../Chat/ChatNav";
 
 function MainRight() {
   return (

@@ -1,0 +1,58 @@
+.chatListContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  padding: 16px;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chatItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.chatDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chatAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.chatAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chatInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatName {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.chatTime {
+  font-size: 0.8em;
+  color: #909090;
+}
+
+.chatMessage {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  color: #909090;
+}

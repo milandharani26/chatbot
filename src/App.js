@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ChatNav from "./components/ChatNav";
-import MainLeft from "./components/MainLeft";
-import Main from "./components/Main";
-import ChatMain from "./components/ChatMain";
-import MainRight from "./components/MainRight";
+import ChatNav from "./components/Chat/ChatNav";
+import MainLeft from "./components/Main/MainLeft";
+import Main from "./components/Main/Main";
+import ChatMain from "./components/Chat/ChatMain";
+import MainRight from "./components/Main/MainRight";
 
 export default function App() {
   return (
